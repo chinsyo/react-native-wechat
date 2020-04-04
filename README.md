@@ -1,6 +1,4 @@
-<img height="200" src="./weixin.png?raw=true">
-
-# React-Native-Wechat-Lib
+# React-Native-Wechat
 
 [React Native] bridging library that integrates WeChat SDKs:
 
@@ -26,8 +24,8 @@
 ## 安装
 
 ```sh
-npm install react-native-wechat-lib --save
-react-native link react-native-wechat-lib
+npm install react-native-wechat --save
+react-native link react-native-wechat
 ```
 
 ## 起步
@@ -49,7 +47,7 @@ react-native link react-native-wechat-lib
 This method should be called once globally.
 
 ```js
-import * as WeChat from 'react-native-wechat-lib';
+import * as WeChat from 'react-native-wechat';
 
 WeChat.registerApp('appid', 'universalLink');
 ```
@@ -116,7 +114,7 @@ Return:
 
 
 ```js
-import * as WeChat from 'react-native-wechat-lib';
+import * as WeChat from 'react-native-wechat';
 
 WeChat.shareText({
   text: 'Text content.',
@@ -143,7 +141,7 @@ Return:
 
 
 ```js
-import * as WeChat from 'react-native-wechat-lib';
+import * as WeChat from 'react-native-wechat';
 
 WeChat.shareImage({
   imageUrl: 'https://google.com/1.jpg',
@@ -170,7 +168,7 @@ Return:
 
 
 ```js
-import * as WeChat from 'react-native-wechat-lib';
+import * as WeChat from 'react-native-wechat';
 
 WeChat.ShareLocalImage({
   imageUrl: '/sdcard/test.png',
@@ -204,7 +202,7 @@ Return:
 
 
 ```js
-import * as WeChat from 'react-native-wechat-lib';
+import * as WeChat from 'react-native-wechat';
 
 WeChat.shareMusic({
   title: 'Good music.',
@@ -237,7 +235,7 @@ Return:
 
 
 ```js
-import * as WeChat from 'react-native-wechat-lib';
+import * as WeChat from 'react-native-wechat';
 
 WeChat.shareVideo({
   title: 'Interesting video.',
@@ -269,7 +267,7 @@ Return:
 
 
 ```js
-import * as WeChat from 'react-native-wechat-lib';
+import * as WeChat from 'react-native-wechat';
 
 WeChat.shareWebpage({
   title: 'Interesting web.',
@@ -306,7 +304,7 @@ Return:
 
 
 ```js
-import * as WeChat from 'react-native-wechat-lib';
+import * as WeChat from 'react-native-wechat';
 
 WeChat.shareMiniProgram({
   title: 'Mini program.',
@@ -337,7 +335,7 @@ Return:
 
 
 ```js
-import * as WeChat from 'react-native-wechat-lib';
+import * as WeChat from 'react-native-wechat';
 
 WeChat.launchMiniProgram({
   userName: 'gh_d39d10000000',

@@ -1,5 +1,5 @@
 {
-  "name": "react-native-wechat-lib",
+  "name": "react-native-wechat",
   "version": "1.1.15",
   "description": "react-native library for wechat app. 支持分享和拉起小程序。",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/little-snow-fox/react-native-wechat-lib.git"
+    "url": "https://github.com/chinsyo/react-native-wechat.git"
   },
   "keywords": [
     "wechat",
@@ -23,16 +23,16 @@
   "peerDependencies": {
     "react-native": ">=0.40"
   },
-  "author": "little-snow-fox <fox@sfxh.cc>",
+  "author": "chinsyo <chinsyo@qq.com>",
   "contributors": [
     {
-      "name": "little-snow-fox",
-      "email": "fox@sfxh.cc"
+      "name": "chinsyo",
+      "email": "chinsyo@qq.com"
     }
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/little-snow-fox/react-native-wechat-lib/issues"
+    "url": "https://github.com/chinsyo/react-native-wechat/issues"
   },
-  "homepage": "https://github.com/little-snow-fox/react-native-wechat-lib#readme"
+  "homepage": "https://github.com/chinsyo/react-native-wechat#readme"
 }
