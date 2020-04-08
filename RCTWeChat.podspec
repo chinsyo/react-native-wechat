@@ -6,17 +6,20 @@
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
+require 'json'
+
+package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
+
 Pod::Spec.new do |s|
   s.name         = "RCTWeChat"
-  s.version      = "1.9.12"
-  s.summary      = "React-Native(iOS/Android) functionalities include WeChat Login, Share, Favorite and Payment"
-  s.description  = <<-DESC
-  React-Native(iOS/Android) functionalities include WeChat Login, Share, Favorite and Payment
-   DESC
-  s.author       = { "chinsyo" => "chinsyo@qq.com" }
-  s.homepage     = "https://github.com/chinsyo/react-native-wechat"
-  s.license      = "MIT"
-  s.platform     = :ios, "9.0"
+  s.version      = package['version']
+  s.summary      = package['description']
+
+  s.homepage     = package['homepage']
+  s.license      = package['license']
+  s.author       = package['author']
+  
+  s.platform     = :ios, "10.0"
   s.source       = { :git => "https://github.com/chinsyo/react-native-wechat.git", :tag => "master" }
   s.source_files  = "ios/*.{h,m}"
   s.dependency "React"
